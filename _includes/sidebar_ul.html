@@ -1,0 +1,41 @@
+{%- include fn/get_sub_dirs.liquid parent=include.parent -%}
+{%- assign sub_dirs = _get_sub_dirs_result -%}
+{%- capture html_data -%}
+    {%- for dir in sub_dirs -%}
+        {%- assign level = include.level | default: 1 -%}
+        {%- assign next_level = level | plus: 1 -%}
+        {%- include fn/get_is_active_dir.liquid dir=dir -%}
+        {%- assign is_active = _get_is_active_dir_result -%}
+    <a class="SideNav-item d-flex flex-items-center flex-justify-between" {% if is_active %}aria-current="page"{% endif %} href="{{dir.url}}">
+        {{dir.title_label | default: dir.title}}
+        {%- include fn/get_dir_all_page_count.liquid dir=dir -%}
+        {%- assign page_count = _get_dir_all_page_count_result -%}
+        <span class="Counter ml-1">{{page_count}}</span>
+    </a>
+        {%- include sidebar_ul.html parent=dir level=next_level -%}
+    {%- endfor -%}
+    {%- if include.parent.show_child -%}
+        {%- include fn/get_dir_pages.liquid dir=include.parent -%}
+        {%- assign sub_pages = _get_dir_pages_result -%}
+        {%- if sub_pages.size > 0 -%}
+            {%- for p in sub_pages -%}
+                {%- if p.url == page.url -%}
+                    {%- assign is_active = true -%}
+                {%- else -%}
+                    {%- assign is_active = false -%}
+                {%- endif -%}
+                {%- assign level = include.level | default: 1 -%}
+    <a class="SideNav-subItem" {% if is_active %}aria-current="page"{% endif %} href="{{p.url}}">{{p.title_label | default: p.title}}</a>
+            {%- endfor -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endcapture -%}
+{%- if html_data.size > 0 -%}
+    {%- include fn/get_is_active_dir.liquid dir=include.parent -%}
+    {%- assign is_active = _get_is_active_dir_result -%}
+    {% if include.level > 2 or include.level == nil %}
+    <nav class="SideNav border-top {% if include.level > 1 %}w-SideNav-sub{% endif %}{% if include.level > 2 %}py-3{% endif %}">
+        {{html_data}}
+    </nav>
+    {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,19 @@
+{%- assign _get_parent_dirs_result = "" | split: "," -%}
+{%- assign dirArray = page.dir | split: "/" -%}
+{%- assign dirArraySize = dirArray | size -%}
+{%- for str in dirArray -%}
+    {%- if forloop.first or forloop.last -%}
+        {%- continue -%}
+    {%- else -%}
+        {%- assign catch_dir = "" -%}
+            {%- for i in (1..forloop.index) -%}
+                {%- assign catch_dir = catch_dir | append: '/' -%}
+                {%- assign catch_dir = catch_dir | append: dirArray[i] -%}
+            {%- endfor -%}
+        {%- assign catch_dir = catch_dir | append: '/' -%}
+        {%- assign find_dir = __ALL_DIRS | where_exp: "item", "item.dir == catch_dir" | first -%}
+        {%- if find_dir -%}
+            {%- assign _get_parent_dirs_result = _get_parent_dirs_result | push: find_dir -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

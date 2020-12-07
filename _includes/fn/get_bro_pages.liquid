@@ -1,0 +1,5 @@
+{%- assign _get_bro_pages_result = nil -%}
+{%- include fn/get_parent_dir.liquid -%}
+{%- assign parent_dir = _get_parent_dir_result -%}
+{%- include fn/get_dir_pages.liquid dir=parent_dir -%}
+{%- assign _get_bro_pages_result = _get_dir_pages_result -%}

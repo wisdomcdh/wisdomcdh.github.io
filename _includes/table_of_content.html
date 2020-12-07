@@ -1,0 +1,21 @@
+{%- assign h_nodes = content | split: '<h' -%}
+<div class="w-stoc">
+  <ul>
+{%- for n in h_nodes -%}
+    {%- assign h_level = n | slice: 0 | times: 1 -%}
+    {%- if h_level > 1 -%}
+        {%- capture closing_tag -%}</h{{h_level}}>{%- endcapture -%}
+        {%- assign tag = n | split: closing_tag -%}
+        {%- assign tag = tag[0] | slice: 1, tag[0].size -%}
+        {%- assign tag = tag | replace_first: 'id="', "" | strip -%}
+        {%- assign tag = tag | split: '">'-%}
+        {%- assign idx = tag.size | minus: 1 -%}
+        {%- assign head = tag[idx] -%}
+        {%- assign href = tag[0] -%}
+      <li class="stoc-{{h_level}}">
+        <a href="#{{href}}">{{head}}</a>
+      </li>
+    {%- endif -%}
+{%- endfor -%}
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.html_pages %}
+    {% unless page.url contains '/portfolio' %}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+      {% if page.lastdate %}
+        <lastmod>{{ page.lastdate | date_to_xmlschema }}</lastmod>
+      {% else if page.date %}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% endif %}
+        <priority>0.5</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

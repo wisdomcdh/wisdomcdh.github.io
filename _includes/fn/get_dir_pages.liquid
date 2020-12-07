@@ -1,0 +1,12 @@
+{%- assign _get_dir_pages_result = "" | split: "," -%}
+{%- assign dir_size = include.dir.dir | split: '/' | size | plus: 1 -%}
+{%- for p in __ALL_PAGES -%}
+    {%- assign p_size = p.dir | split: '/' | size -%}
+    {%- assign dir_lsize = include.dir.dir | size -%}
+    {%- assign p_dir = p.dir | slice: 0, dir_lsize -%}
+    {%- if dir_size == p_size -%}
+        {%- if include.dir.dir == p_dir -%}
+            {%- assign _get_dir_pages_result = _get_dir_pages_result | push: p -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

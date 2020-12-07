@@ -1,0 +1,9 @@
+{%- assign _get_card_image_url_result = nil -%}
+{%- if include.page.card_image_url -%}
+    {%- assign _get_card_image_url_result = include.page.card_image_url -%}
+{%- else -%}
+    {%- assign img_arr = include.page.content | split: "<img " -%}
+    {%- assign img_arr = img_arr[1] | strip | split: 'src="' -%}
+    {%- assign img_arr = img_arr[1] | strip | split: '"' -%}
+    {%- assign _get_card_image_url_result = img_arr[0] -%}
+{%- endif -%}

@@ -1,0 +1,20 @@
+<div class="w-breadcrumb">
+    <div class="navigation-top d-flex flex-justify-between">
+        <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
+            <li class="breadcrumb-item">
+                <a class="no-underline" href="/" title="/">
+                    <em class="fa fa-home"></em>
+                </a>
+            </li>
+            {%- include fn/get_parent_dirs.liquid -%}
+            {%- assign parent_dirs = _get_parent_dirs_result -%}
+            {%- for dir in parent_dirs -%}
+            <li class="breadcrumb-item"><a href="{{dir.url}}">{{dir.title_label | default: dir.title}}</a></li>
+            {%- endfor -%}
+            <li class="breadcrumb-item" aria-current="page">{{page.title_label | default: page.title}}</li>
+        </ul>
+        <a class="edit" href="{{site.val_git_edit_url}}{{page.path}}" title="Edit on GitHub" rel="noreferrer" target="_blank">
+            <i class="fa fa-edit"></i>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{%- include fn/get_bro_pages.liquid -%}
+{%- assign bro_pages = _get_bro_pages_result -%}
+{%- assign _get_prev_result = nil -%}
+{%- assign _get_next_result = nil -%}
+{%- assign current_page_index = -1 -%}
+{%- for p in bro_pages -%}
+    {%- if p.url == page.url -%}
+        {%- assign current_page_index = forloop.index | minus: 1 -%}
+        {%- break -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- if current_page_index > -1 -%}
+    {%- assign _get_prev_result_index = current_page_index | minus: 1 -%}
+    {%- assign _get_next_result_index = current_page_index | plus: 1-%}
+    {%- if _get_prev_result_index > -1 -%}
+        {%- assign _get_prev_result = bro_pages[_get_prev_result_index] -%}
+    {%- endif -%}
+    {%- if _get_prev_result_index < bro_pages.size -%}
+        {%- assign _get_next_result = bro_pages[_get_next_result_index] -%}
+    {%- endif -%}
+{%- endif -%}

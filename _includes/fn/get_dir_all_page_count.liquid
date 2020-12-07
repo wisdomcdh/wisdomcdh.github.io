@@ -1,0 +1,9 @@
+{%- assign _get_dir_all_page_count_result = 0 -%}
+{%- include fn/get_dir_pages.liquid dir=include.dir -%}
+{%- assign _get_dir_all_page_count_result = _get_dir_all_page_count_result | plus: _get_dir_pages_result.size -%}
+{%- include fn/get_sub_dirs.liquid parent=include.dir -%}
+{%- assign sub_dirs = _get_sub_dirs_result -%}
+{%- for d in sub_dirs -%}
+    {%- include fn/get_dir_pages.liquid dir=d -%}
+    {%- assign _get_dir_all_page_count_result = _get_dir_all_page_count_result | plus: _get_dir_pages_result.size -%}
+{%- endfor -%}

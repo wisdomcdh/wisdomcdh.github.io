@@ -1,0 +1,9 @@
+{%- assign _get_card_desc_result = nil -%}
+{%- if include.page.description -%}
+    {%- assign _get_card_desc_result = include.page.description -%}
+{%- else -%}
+    {%- assign h2_arr = include.page.content | split: "</h2>" -%}
+    {%- assign h2_arr = h2_arr[1] | strip | split: '<h' -%}
+    {%- assign h2_arr = h2_arr[0] | strip -%}
+    {%- assign _get_card_desc_result = h2_arr | strip_html | slice: 0, 100  -%}
+{%- endif -%}

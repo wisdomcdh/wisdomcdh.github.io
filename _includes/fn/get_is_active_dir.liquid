@@ -1,0 +1,6 @@
+{%- assign _get_is_active_dir_result = false -%}
+{%- assign dir_slice_size = include.dir.dir | size -%}
+{%- assign page_dir = page.dir | slice: 0, dir_slice_size -%}
+{%- if page_dir == dir.dir -%}
+    {%- assign _get_is_active_dir_result = true -%}
+{%- endif -%}

@@ -1,0 +1,3 @@
+{%- assign _get_parent_dir_result = nil -%}
+{%- include fn/get_parent_dirs.liquid -%}
+{%- assign _get_parent_dir_result = _get_parent_dirs_result | last -%}

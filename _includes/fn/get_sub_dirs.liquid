@@ -1,0 +1,33 @@
+{%- assign _get_sub_dirs_result = "" | split: "," -%}
+{%- assign _parent = include.parent | default: nil -%}
+{%- assign _parent_depth = 2 -%}
+
+{%- if _parent != nil -%}
+    {%- assign _parent_depthArr = _parent.dir | split: "/" -%}
+    {%- assign _parent_depth = _parent_depthArr.size | minus: 1 -%}
+    {%- assign _parent_depth_match = _parent_depthArr.size | minus: 1 -%}
+{%- endif -%}
+
+{%- for dir in __ALL_DIRS -%}
+    {%- assign _depthArr = dir.dir | split: "/" -%}
+    {%- assign _depth = _depthArr.size | minus: 1 -%}
+    {%- if _parent == nil -%}
+        {%- if _depth == _parent_depth -%}
+            {%- assign _get_sub_dirs_result = _get_sub_dirs_result | push: dir -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- assign _depthNext = _depthArr.size | minus: 2 -%}
+        {%- if _depthNext == _parent_depth -%}
+            {%- assign matched = true -%}
+            {%- for i in (0.._parent_depth_match) -%}
+                {%- unless _parent_depthArr[i] == _depthArr[i] -%}
+                    {%- assign matched = false -%}
+                    {%- break -%}
+                {%- endunless -%}
+            {%- endfor -%}
+            {%- if matched -%}
+                {%- assign _get_sub_dirs_result = _get_sub_dirs_result | push: dir -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

@@ -1,0 +1,21 @@
+{%- unless __ALL_PAGES -%}
+    {%- assign __ALL_PAGES = site.html_pages
+        | sort: 'nav_order'
+        | sort: 'url'
+        | where_exp: 'item', 'item.name != "index.md" and item.dir contains "/docs/"' -%}
+    {%- assign __ALL_DIRS = site.html_pages
+    | where_exp: 'item', 'item.name == "index.md"'
+    | where_exp: 'item', 'item.dir != "/"'
+    | where_exp: 'item', 'item.exclude != true'
+    | sort: 'nav_order'
+    | sort: 'title' -%}
+
+    {%- assign __ALL_DIRS_LEVEL1 = "" | split: "," -%}
+    {%- for dir in __ALL_DIRS -%}
+        {%- assign depth = dir.dir | split: "/" | size -%}
+        {%- assign depth = depth | minus: 2 -%}
+        {%- if depth == 1 -%}
+            {%- assign __ALL_DIRS_LEVEL1 = __ALL_DIRS_LEVEL1 | push: dir -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endunless -%}

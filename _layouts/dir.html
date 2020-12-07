@@ -1,0 +1,9 @@
+---
+layout: base
+is_dir_layout: true
+---
+{% include globalVars/page_and_dirs.html %}
+<div class="markdown-body">
+    {{ content }}
+</div>
+{% include dir_pages.html dir=page %}

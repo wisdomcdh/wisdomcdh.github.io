@@ -1,0 +1,14 @@
+{%- include fn/get_prev_next_page.liquid -%}
+{%- assign prevStudy = _get_prev_result -%}
+{%- assign nextStudy = _get_next_result -%}
+<hr/>
+<div class="d-flex flex-wrap flex-justify-between mt-3">
+    {% if prevStudy != nil %}
+    <a class="btn" href="{{prevStudy.url}}"><span class="text-grey-dk-100"><em class="fa fa-arrow-circle-left"></em> 이전글</span><br />{{prevStudy.title_label | default: prevStudy.title}}</a>
+    {% else %}
+    <div></div>
+    {% endif %}
+    {% if nextStudy != nil %}
+    <a class="btn text-right" href="{{nextStudy.url}}"><span class="text-grey-dk-100">다음글 <em class="fa fa-arrow-circle-right"></em></span><br />{{nextStudy.title_label | default: nextStudy.title}}</a>
+    {% endif %}
+</div>

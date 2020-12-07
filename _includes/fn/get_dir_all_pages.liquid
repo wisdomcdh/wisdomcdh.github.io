@@ -1,0 +1,13 @@
+{%- assign _get_dir_all_pages_result = "" | split: "," -%}
+{%- include fn/get_dir_pages.liquid dir=include.dir -%}
+{%- for p in _get_dir_pages_result -%}
+    {%- assign _get_dir_all_pages_result = _get_dir_all_pages_result | push: p %}
+{%- endfor -%}
+{%- include fn/get_sub_dirs.liquid parent=include.dir -%}
+{%- assign sub_dirs = _get_sub_dirs_result -%}
+{%- for d in sub_dirs -%}
+    {%- include fn/get_dir_pages.liquid dir=d -%}
+    {%- for p in _get_dir_pages_result -%}
+        {%- assign _get_dir_all_pages_result = _get_dir_all_pages_result | push: p %}
+    {%- endfor -%}
+{%- endfor -%}

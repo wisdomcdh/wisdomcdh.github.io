@@ -1,0 +1,22 @@
+<div class="d-flex flex-column flex-sm-row flex-wrap">
+    {% for p in include.pages %}
+        {%- include fn/get_card_image_url.liquid page=p -%}
+        {%- assign card_image_url = _get_card_image_url_result -%}
+        {%- include fn/get_card_desc.liquid page=p -%}
+        {%- assign card_desc = _get_card_desc_result -%}
+    <div class="w-card-small border">
+        <a href="{{p.url}}">
+            <div class="w-card-image">
+                <div class="w-backdrop"></div>
+                {% if card_image_url %}
+                <img src="{{card_image_url}}" alt="{{card_image_url}}" />
+                {% endif %}
+                <span class="w-card-title css-truncate css-truncate-overflow">{{p.title_label | default: p.title}}</span>
+            </div>
+            <div class="w-card-content">
+                <p class="css-truncate-overflow">{{p.title}}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

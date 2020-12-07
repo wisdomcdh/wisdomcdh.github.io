@@ -1,0 +1,19 @@
+{%- include fn/get_bro_pages.liquid -%}
+{%- assign bro_pages = _get_bro_pages_result -%}
+{%- if bro_pages and bro_pages.size > 0 -%}
+<hr/>
+<div class="Box Box--condensed">
+    <div class="Box-header">
+        <h3 class="Box-title">
+            현재 구성의 다른 글
+        </h3>
+    </div>
+    <ul>
+{% for p in bro_pages %}
+        <li class="Box-row">
+            <a href="{{p.url}}">{{p.title_label | default: p.title}}</a>
+        </li>
+{% endfor %}
+    </ul>
+</div>
+{%- endif -%}

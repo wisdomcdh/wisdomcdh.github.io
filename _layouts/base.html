@@ -1,0 +1,35 @@
+---
+layout: tasks/compress
+---
+{% include globalVars/page_and_dirs.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ko-KR' }}">
+{% include head.html %}
+
+<body>
+  <div class="d-flex flex-column">
+    {% include top-menu.html %}
+    <div class="w-body">
+      {% include sidebar.html %}
+      <div class="w-content {%if layout.is_dir_layout %}w-content-dir{% endif %}">
+        {%- unless layout.hide_prev_next -%}
+          {% include nav_top.html %}
+        {%- endunless -%}
+        {% unless layout.is_dir_layout %}
+          {% include table_of_content.html %}
+        {% endunless %}
+        <div class="w-content-content">
+          {{ content }}
+          {%- unless layout.hide_prev_next -%}
+            {% include nav_prev_next.html %}
+            {% unless layout.is_dir_layout %}
+              {% include disqus.html %}
+            {%- endunless -%}
+          {%- endunless -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
