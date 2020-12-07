@@ -1,8 +1,9 @@
 {%- unless __ALL_PAGES -%}
-    {%- assign __ALL_PAGES = site.html_pages
+    {%- assign __ALL_PAGES = site.html_pages 
         | sort: 'nav_order'
         | sort: 'url'
-        | where_exp: 'item', 'item.name != "index.md" and item.dir contains "/docs/"' -%}
+        | where_exp: 'item', 'item.name != "index.md"'
+        | where_exp: 'item', 'item.dir contains "/docs/"' -%}
     {%- assign __ALL_DIRS = site.html_pages
     | where_exp: 'item', 'item.name == "index.md"'
     | where_exp: 'item', 'item.dir != "/"'
