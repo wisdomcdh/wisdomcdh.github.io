@@ -36,7 +36,15 @@ val_git_edit_url: "https://github.com/wisdomcdh/wisdomcdh.github.io/edit/master/
 sass:
   sass_dir: _sass
 
-disqus_shortname: 'wisdomcdhgithub'
+disqus:
+  enable: false
+  shortname: 'wisdomcdhgithub'
+
+utterances:
+  enable: true
+  repo: wisdomcdh/wisdomcdh.github.io
+  issue_term: pathname
+  theme: github-light
 
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the ste is built.

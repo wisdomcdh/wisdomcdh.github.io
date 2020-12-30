@@ -2,8 +2,8 @@
     {% for dir in __ALL_DIRS_LEVEL1 %}
         {%- include fn/get_is_active_dir.liquid dir=dir -%}
         {%- assign is_active = _get_is_active_dir_result -%}
-    <div class="w-sidevar-top-level">
-        <a  {% if is_active %}aria-current="page"{% endif %}>{{dir.title_label | default: dir.title}}</a>
+    <div class="w-sidevar-top-level {% if dir.resume %}resume{% endif %}">
+        <a {% if is_active %}aria-current="page"{% endif %} {% if dir.resume %}href="{{dir.url}}"{% endif %}>{{dir.title_label | default: dir.title}}</a>
         {%- include sidebar_ul.html parent=dir -%}
     </div>
     {% endfor %}

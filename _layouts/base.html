@@ -1,7 +1,7 @@
 ---
 layout: tasks/compress
 ---
-{% include globalVars/page_and_dirs.html %}
+{% include globalVars/page_and_dirs.liquid %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'ko-KR' }}">
 {% include head.html %}
@@ -22,10 +22,11 @@ layout: tasks/compress
           {{ content }}
           {%- unless layout.hide_prev_next -%}
             {% include nav_prev_next.html %}
-            {% unless layout.is_dir_layout %}
-              {% include disqus.html %}
-            {%- endunless -%}
           {%- endunless -%}
+          {% unless layout.is_dir_layout %}
+            {% include disqus.html %}
+          {%- endunless -%}
+          {% include utterances.html %}
         </div>
       </div>
     </div>

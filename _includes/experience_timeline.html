@@ -1,0 +1,41 @@
+{% if include.data %}
+<div>
+    {% for item in include.data %}
+    <div class="TimelineItem TimelineItem--condensed">
+        <div class="TimelineItem-badge">
+            <svg class="octicon octicon-git-commit" viewBox="0 0 14 16" version="1.1" width="14" height="16"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M10.86 7c-.45-1.72-2-3-3.86-3-1.86 0-3.41 1.28-3.86 3H0v2h3.14c.45 1.72 2 3 3.86 3 1.86 0 3.41-1.28 3.86-3H14V7h-3.14zM7 10.2c-1.22 0-2.2-.98-2.2-2.2 0-1.22.98-2.2 2.2-2.2 1.22 0 2.2.98 2.2 2.2 0 1.22-.98 2.2-2.2 2.2z">
+                </path>
+            </svg>
+        </div>
+        <div class="TimelineItem-body">
+            <div class="clearfix p-3 border">
+                <div class="float-left p-3 mr-3 bg-gray">
+                    <img style="width:80px" src="{{item.img}}" alt="{{item.img}}" />
+                    <div class="h5" style="text-align: center">{{item.period}}</div>
+                </div>
+                <div class="overflow-hidden">
+                    <div class="period">
+                        <span class="h4">{{item.title}}</span>
+                        <span class="h6">({{item.period}})</span>
+                    </div>
+                    <div class="issue">
+                        <span>{{item.desc}}</span>
+                        <ul>
+                            {%- for i in item.issue -%}
+                            <li>{{i}}</li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <span class="h6">{{item.skill}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

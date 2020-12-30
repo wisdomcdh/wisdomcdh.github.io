@@ -19,4 +19,5 @@
             {%- assign __ALL_DIRS_LEVEL1 = __ALL_DIRS_LEVEL1 | push: dir -%}
         {%- endif -%}
     {%- endfor -%}
+    {%- assign __ALL_DIRS_LEVEL1 = __ALL_DIRS_LEVEL1 | sort: 'nav_order' -%}
 {%- endunless -%}
