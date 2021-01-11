@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-sm-row flex-wrap">
+<div class="w-card-box">
     {% for p in include.pages %}
         {%- include fn/get_card_image_url.liquid page=p -%}
         {%- assign card_image_url = _get_card_image_url_result -%}

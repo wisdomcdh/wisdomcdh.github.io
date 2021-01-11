@@ -9,9 +9,9 @@
 {% endif %}
 
 {%- include fn/get_sub_dirs.liquid parent=include.dir -%}
-{%- assign sub_dirs = _get_sub_dirs_result -%}
+{%- assign sub_dirs = _get_sub_dirs_result | sort: 'nav_order' -%}
 {%- for d in sub_dirs -%}
-<div class="Subhead">
+<div class="Subhead" style="margin-top: 12px">
     <div class="Subhead-heading">{{d.title_label | default: d.title}}</div>
     <div class="Subhead-description">{{d.description}}</div>
 </div>
