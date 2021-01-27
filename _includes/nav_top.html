@@ -11,7 +11,8 @@
             {%- for dir in parent_dirs -%}
             <li class="breadcrumb-item"><a href="{{dir.url}}">{{dir.title_label | default: dir.title}}</a></li>
             {%- endfor -%}
-            <li class="breadcrumb-item" aria-current="page">{{page.title_label | default: page.title}}</li>
+            {% include fn/get_page_date.liquid %}
+            <li class="breadcrumb-item" aria-current="page">{{page.title_label | default: page.title}} <span class="f6"> {{ _get_page_date_result }}</span></li>
         </ul>
         <a class="edit" href="{{site.val_git_edit_url}}{{page.path}}" title="Edit on GitHub" rel="noreferrer" target="_blank">
             <i class="fa fa-edit"></i>

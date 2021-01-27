@@ -1,0 +1,10 @@
+{%- assign _get_page_date_result = page.date -%}
+{%- unless _get_page_date_result -%}
+    {%- assign name = page.name | slice: 0, 10 -%}
+    {%- assign dashArray = name | split: "-" -%}
+    {%- if dashArray.size == 3 -%}
+        {%- assign _get_page_date_result = name -%}
+    {%- else -%}
+        {%- assign _get_page_date_result = '' -%}
+    {%- endif -%}
+{%- endunless -%}

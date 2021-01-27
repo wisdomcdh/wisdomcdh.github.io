@@ -55,4 +55,4 @@ nginx 의 reverser proxy 기능을 이용하여 80 port로의 접속을 내부 8
 sudo service nginx reload
 ```
 
-이 과정 까지 마쳤다면, jenkins job을 실행하여 [성공로그](/docs/code_fragment/simple_cicd/002-make-pipeline/#%EC%84%B1%EA%B3%B5-%EB%A1%9C%EA%B7%B8)를 확인할 수 있다.
+이 과정 까지 마쳤다면, jenkins job을 실행하여 [성공로그](/docs/code_fragment/jenkins/simple_cicd/002-make-pipeline/#%EC%84%B1%EA%B3%B5-%EB%A1%9C%EA%B7%B8)를 확인할 수 있다.

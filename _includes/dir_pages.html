@@ -1,11 +1,19 @@
 {%- include fn/get_dir_pages.liquid dir=include.dir -%}
 {%- assign pages = _get_dir_pages_result -%}
-    {% if pages.size > 0 %}
+{% if pages.size > 0 %}
+{%- assign orderbyArray = include.dir.orderby | split: "," -%}
+{%- for orderby in orderbyArray -%}
+    {%- if orderby == "desc" -%}
+        {%- assign pages = pages | reverse -%}
+    {%- else -%}
+        {%- assign pages = pages | sort: orderby -%}
+    {%- endif -%}
+{%- endfor -%}
 <div class="Subhead">
     <div class="Subhead-heading">글 목록</div>
     <div class="Subhead-description">{{dir.description}}</div>
 </div>
-    {% include pages_viewer.html pages=pages %}
+{% include pages_viewer.html pages=pages %}
 {% endif %}
 
 {%- include fn/get_sub_dirs.liquid parent=include.dir -%}
@@ -15,6 +23,6 @@
     <div class="Subhead-heading">{{d.title_label | default: d.title}}</div>
     <div class="Subhead-description">{{d.description}}</div>
 </div>
-    {%- include fn/get_dir_pages.liquid dir=d -%}
-    {% include pages_viewer.html pages=_get_dir_pages_result %}
+{%- include fn/get_dir_pages.liquid dir=d -%}
+{% include pages_viewer.html pages=_get_dir_pages_result %}
 {%- endfor -%}

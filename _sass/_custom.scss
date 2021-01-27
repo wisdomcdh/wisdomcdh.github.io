@@ -237,6 +237,30 @@ img {
     top: 90px;
     grid-area: table-of-contents / table-of-contents / table-of-contents / table-of-contents;
     overflow: auto;
+
+    .stoc-1 {
+        padding-left: 10px;
+    }
+
+    .stoc-2 {
+        padding-left: 20px;
+    }
+
+    .stoc-3 {
+        padding-left: 30px;
+    }
+
+    .stoc-4 {
+        padding-left: 40px;
+    }
+
+    .stoc-5 {
+        padding-left: 50px;
+    }
+
+    .stoc-6 {
+        padding-left: 60px;
+    }
 }
 
 .w-breadcrumb {

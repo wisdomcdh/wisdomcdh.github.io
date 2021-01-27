@@ -1,13 +1,13 @@
 ---
 title: AWS(EC2) Java OpenJDK 8 설치
-date: '2020-04-11'
+date: 2020-04-11
 ---
 ## 1. OpenJDK 8 설치
 
 ```sh
 sudo yum install -y java-1.8.0-openjdk-devel.x86_64
 ```
-{{page.date}}
+
 ## 2. 인스턴스 자바 버전 변경 (Optional)
 
 설치가 끝나면 사용하고자 하는 버전의 자바를 선택한다.

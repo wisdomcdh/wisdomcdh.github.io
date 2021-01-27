@@ -1,6 +1,7 @@
 ---
 layout: dir
 title: 찰칵 (chalcak)
+nav_order: 1
 has_children_comments: true
 ---
 

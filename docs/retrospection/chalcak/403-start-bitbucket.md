@@ -1,5 +1,6 @@
 ---
 title: 소스 저장소 구성 - bitbucket
+date: 2020-05-01
 nav_order: 403
 ---
 # 소스 저장소를 구성하며
