@@ -1,0 +1,876 @@
+Date: Thu, 11 Mar 2021 07:01:56 +0000 (UTC)
+Message-ID: <276672560.9.1615446116612@76e721bd2727>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_8_1184431154.1615446116611"
+
+------=_Part_8_1184431154.1615446116611
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>TA &gt; Security &amp; Performance</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>TA &gt; Security &amp; Performance</h1>
+    <div class=3D"Section1">
+        <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1615446116600 {padding: 0px;}
+div.rbtoc1615446116600 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1615446116600 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1615446116600">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#TA>Security&amp;Performance-Java">Java</a></li>=20
+<li><a href=3D"#TA>Security&amp;Performance-OS-LinuxKernel(EC2t2.micro)">OS=
+ - Linux Kernel (EC2 t2.micro)</a></li>=20
+<li><a href=3D"#TA>Security&amp;Performance-Redis">Redis</a></li>=20
+</ul>=20
+</div>
+<h1 id=3D"TA>Security&amp;Performance-Java">Java</h1>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 534.0px;">
+<col style=3D"width: 745.0px;">
+<col style=3D"width: 479.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Action</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Description</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Caution</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd"><p>-XX:+HeapDumpOnCtrlBreak<br>-XX:HeapDumpPath=
+=3D${dumpPath}</p></td>
+<td class=3D"confluenceTd"><p>WAS=EC=97=90=EC=84=9C OutOfMemoryError =EB=B0=
+=9C=EC=83=9D =EC=8B=9C, =EB=B6=84=EC=84=9D=EC=9D=84 =EC=9C=84=ED=95=B4 =EC=
+=9E=90=EB=8F=99=EC=9C=BC=EB=A1=9C =EB=8D=A4=ED=94=84=EB=A5=BC =EC=83=9D=EC=
+=84=B1=ED=95=9C=EB=8B=A4.</p></td>
+<td class=3D"confluenceTd"><p>=EC=9D=B4 =EC=98=B5=EC=85=98=EC=9D=80 =EB=B3=
+=B4=EC=95=88=EC=9D=84 =EC=9C=84=ED=95=B4 DEV, STG, PT(Performance Test) =ED=
+=99=98=EA=B2=BD=EC=97=90=EC=84=9C=EB=A7=8C =EC=9C=A0=EC=A7=80=ED=95=B4=EC=
+=95=BC =ED=95=A9=EB=8B=88=EB=8B=A4. </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"TA>Security&amp;Performance-OS-LinuxKernel(EC2t2.micro)">OS - Lin=
+ux Kernel (EC2 t2.micro)</h1>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 491.0px;">
+<col style=3D"width: 146.0px;">
+<col style=3D"width: 146.0px;">
+<col style=3D"width: 146.0px;">
+<col style=3D"width: 829.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Check</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Default</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Recommended</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Reboot</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Description</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.core_uses_pid</p>=
+</td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=ED=94=84=EB=A1=9C=EA=B7=B8=EB=9E=A8=EC=9D=98=
+ =EB=B9=84=EC=A0=95=EC=83=81=EC=A0=81=EC=9D=B8 =EC=A2=85=EB=A3=8C=EA=B0=80 =
+=EB=B0=9C=EC=83=9D=ED=95=98=EC=97=AC =EC=BB=A4=EB=84=90=EC=97=90=EC=84=9C =
+=EB=A9=94=EB=AA=A8=EB=A6=AC=EB=A5=BC =EB=8D=A4=ED=94=84 =EC=8B=9C=ED=82=A8 =
+=ED=8C=8C=EC=9D=BC=EC=97=90 PID=EB=A5=BC =ED=8F=AC=ED=95=A8=EC=97=AC=EB=B6=
+=80</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.msgmnb</p></td>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>65536</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=ED=95=98=EB=82=98=EC=9D=98 =EB=A9=94=EC=8B=
+=9C=EC=A7=80 =ED=81=90=EC=97=90=EC=84=9C=EC=9D=98 =EC=B5=9C=EB=8C=80 =EB=B0=
+=94=EC=9D=B4=ED=8A=B8 =EC=88=98=EB=A5=BC =EC=A7=80=EC=A0=95</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.msgmax</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>65536</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=ED=95=98=EB=82=98=EC=9D=98 =ED=94=84=EB=A1=
+=9C=EC=84=B8=EC=8A=A4=EC=97=90=EC=84=9C =EB=8B=A4=EB=A5=B8 =ED=94=84=EB=A1=
+=9C=EC=84=B8=EC=8A=A4=EB=A1=9C =EB=B3=B4=EB=82=B4=EC=A7=88 =EC=88=98 =EC=9E=
+=88=EB=8A=94 =EC=B5=9C=EB=8C=80 =EB=A9=94=EC=8B=9C=EC=A7=80 =EC=82=AC=EC=9D=
+=B4=EC=A6=88=EB=A5=BC =EC=A7=80=EC=A0=95</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.pid_max</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=EC=B5=9C=EB=8C=80 PID =EC=88=98=EB=A5=BC =EC=
+=A7=80=EC=A0=95 - =EC=95=BD 25% =EC=A0=95=EB=8F=84 =EB=86=92=EA=B2=8C =EC=
+=9E=A1=EB=8F=84=EB=A1=9D =ED=95=9C=EB=8B=A4.</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.shmmax</p></td>
+<td class=3D"confluenceTd"><p>18446744073692774399</p></td>
+<td class=3D"confluenceTd"><p>18446744073692774399</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=EA=B3=B5=EC=9C=A0=EB=A9=94=EB=AA=A8=EB=A6=AC=
+ =EC=B5=9C=EB=8C=80=EA=B0=92=EC=9D=84 =EC=A7=80=EC=A0=95</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.shmall</p></td>
+<td class=3D"confluenceTd"><p>18446744073692774399</p></td>
+<td class=3D"confluenceTd"><p>18446744073692774399</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>=EA=B3=B5=EC=9C=A0=EB=A9=94=EB=AA=A8=EB=A6=AC=
+ =EC=B5=9C=EC=86=8C=EA=B0=92=EC=9D=84 =EC=A7=80=EC=A0=95</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n kernel.sysrq</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>kernel=EC=9D=98 =EC=A0=95=EB=B3=B4=EB=A5=BC =
+=EB=82=98=ED=83=80=EB=82=98=EA=B2=8C =ED=95=98=EB=8A=94 =EC=BD=A4=EB=B3=B4 =
+=ED=82=A4<br>kernel=EC=9D=B4 =EC=96=B4=EB=96=A4 =EB=8F=99=EC=9E=91=EC=9D=84=
+ =ED=95=98=EB=8D=98=EC=A4=91=EC=9D=B4=EB=9D=BC=EB=8F=84 =EC=82=AC=EC=9A=A9=
+=EC=9E=90=EC=9D=98 =EC=9A=94=EC=B2=AD=EC=97=90 Blocking =EC=97=86=EC=9D=B4 =
+=ED=8A=B9=EB=B3=84=ED=95=9C =EB=AA=85=EB=A0=B9=EC=9D=84 =EC=B2=98=EB=A6=AC=
+=ED=95=98=EB=8A=94 =EA=B8=B0=EB=8A=A5=EC=9D=84 =EC=A0=9C=EA=B3=B5<br>(=ED=
+=8A=B9=EB=B3=84=ED=95=9C =EB=AA=85=EB=A0=B9=EC=9D=80 =EC=8B=9C=EC=8A=A4=ED=
+=85=9C =EA=B0=95=EC=A0=9C=EC=A2=85=EB=A3=8C, =ED=8C=8C=EC=9D=BC =EC=8B=9C=
+=EC=8A=A4=ED=85=9C Read Only Mount, Memory =EC=A0=95=EB=B3=B4 Dump =EB=93=
+=B1=EC=9D=B4 =EC=9E=88=EB=8B=A4<br>=ED=95=B4=EB=8B=B9 =EA=B8=B0=EB=8A=A5=EC=
+=9D=80 Magic System Request Key=EB=9D=BC=EB=8A=94 =EA=B2=83=EC=9D=84 =ED=86=
+=B5=ED=95=B4 =EC=A0=9C=EA=B3=B5=EB=90=98=EB=8A=94=EB=8D=B0 ALT +&nbsp;SysRq=
+&nbsp;+ "Key" =EC=A1=B0=ED=95=A9=EC=9C=BC=EB=A1=9C =EC=82=AC=EC=9A=A9</p><p=
+>0 - =EB=B9=84=ED=99=9C=EC=84=B1=ED=99=94<br>1 - =ED=99=9C=EC=84=B1=ED=99=
+=94<br>2 - =EC=BD=98=EC=86=94 =EB=A1=9C=EA=B9=85 =EC=88=98=EC=A4=80 =EC=A0=
+=9C=EC=96=B4 =EA=B0=80=EB=8A=A5<br>4 - =ED=82=A4=EB=B3=B4=EB=93=9C =EC=A0=
+=9C=EC=96=B4 =EA=B0=80=EB=8A=A5 (SAK, =EC=96=B8 =EB=A1=9C=EC=9A=B0)<br>8 - =
+=ED=94=84=EB=A1=9C=EC=84=B8=EC=8A=A4 =EB=93=B1=EC=9D=98 =EB=94=94=EB=B2=84=
+=EA=B9=85 =EB=8D=A4=ED=94=84 =EC=82=AC=EC=9A=A9 =EA=B0=80=EB=8A=A5<br>16 - =
+enable sync =EB=AA=85=EB=A0=B9<br>32 - =EB=8B=A4=EC=8B=9C =EB=A7=88=EC=9A=
+=B4=ED=8A=B8 =EC=9D=BD=EA=B8=B0 =EC=A0=84=EC=9A=A9 =EC=82=AC=EC=9A=A9<br>64=
+ - =ED=94=84=EB=A1=9C=EC=84=B8=EC=8A=A4 =EC=8B=9C=EA=B7=B8=EB=84=90=EB=A7=
+=81 =EA=B0=80=EB=8A=A5 (term, kill, oom-kill)<br>128 - =EC=9E=AC=EB=B6=80=
+=ED=8C=85 / =EC=A0=84=EC=9B=90 =EB=81=84=EA=B8=B0 =ED=97=88=EC=9A=A9<br>256=
+ - =EB=AA=A8=EB=93=A0 RT =EC=9E=91=EC=97=85=EC=9D=98 =EA=B2=BD=EA=B3=84 =EC=
+=84=A4=EC=A0=95 =ED=97=88=EC=9A=A9</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.ip_forward</p><=
+/td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_challenge_a=
+ck_limit</p></td>
+<td class=3D"confluenceTd"><p>1000</p></td>
+<td class=3D"confluenceTd"><p>1073741823</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">10</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.ac=
+cept_redirects</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">11</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.ac=
+cept_source_route</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.lo=
+g_martians</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">13</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.rp=
+_filter</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">14</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.ar=
+p_ignore</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">15</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.conf.default.se=
+nd_redirects</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">16</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.icmp_echo_ignor=
+e_broadcasts</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">17</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.icmp_ignore_bog=
+us_error_responses</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">18</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_syncookies<=
+/p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">19</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_syn_retries=
+</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">20</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_synack_retr=
+ies</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">21</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_abort_on_ov=
+erflow</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">22</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_congestion_=
+control</p></td>
+<td class=3D"confluenceTd"><p>cubic</p></td>
+<td class=3D"confluenceTd"><p>cubic</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">23</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_fin_timeout=
+</p></td>
+<td class=3D"confluenceTd"><p>60</p></td>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">24</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_keepalive_t=
+ime</p></td>
+<td class=3D"confluenceTd"><p>7200</p></td>
+<td class=3D"confluenceTd"><p>1200</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">25</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_keepalive_i=
+ntvl</p></td>
+<td class=3D"confluenceTd"><p>75</p></td>
+<td class=3D"confluenceTd"><p>60</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">26</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_keepalive_p=
+robes</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">27</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_max_syn_bac=
+klog</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>1024 or 16000</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">28</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_max_tw_buck=
+ets</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>131072 or 360000</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">29</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_orphan_retr=
+ies</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">30</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_rfc1337</p>=
+</td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">31</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_sack</p></t=
+d>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">32</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_slow_start_=
+after_idle</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">33</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_tw_reuse</p=
+></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">34</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_tw_recycle<=
+/p></td>
+<td class=3D"confluenceTd"><p>?</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">35</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_timestamps<=
+/p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">36</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_window_scal=
+ing</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">37</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_rmem</p></t=
+d>
+<td class=3D"confluenceTd"><p>4096 87380 6291456</p></td>
+<td class=3D"confluenceTd"><p>4096 87380 4194304</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">38</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.tcp_wmem</p></t=
+d>
+<td class=3D"confluenceTd"><p>4096 20480 4194304</p></td>
+<td class=3D"confluenceTd"><p>4096 87380 4194304</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">39</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.ipv4.route.secret_in=
+terval</p></td>
+<td class=3D"confluenceTd"><p>deprecated</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">40</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.core.netdev_max_back=
+log</p></td>
+<td class=3D"confluenceTd"><p>1000</p></td>
+<td class=3D"confluenceTd"><p>16000</p></td>
+<td class=3D"confluenceTd"><p>O</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">41</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.core.somaxconn</p></=
+td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">42</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.core.rmem_max</p></t=
+d>
+<td class=3D"confluenceTd"><p>212992</p></td>
+<td class=3D"confluenceTd"><p>4194304</p></td>
+<td class=3D"confluenceTd"><p>O</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">43</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n net.core.wmem_max</p></t=
+d>
+<td class=3D"confluenceTd"><p>212992</p></td>
+<td class=3D"confluenceTd"><p>4194304</p></td>
+<td class=3D"confluenceTd"><p>O</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">44</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.swappiness</p></td>
+<td class=3D"confluenceTd"><p>60</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">45</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.dirty_background_rati=
+o</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">46</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.dirty_expire_centisec=
+s</p></td>
+<td class=3D"confluenceTd"><p>3000</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">47</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.dirty_writeback_centi=
+secs</p></td>
+<td class=3D"confluenceTd"><p>500</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">48</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.dirty_ratio</p></td>
+<td class=3D"confluenceTd"><p>20</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">49</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.vfs_cache_pressure</p=
+></td>
+<td class=3D"confluenceTd"><p>100</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">50</td>
+<td class=3D"confluenceTd"><p>sudo /sbin/sysctl -n vm.zone_reclaim_mode</p>=
+</td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"TA>Security&amp;Performance-Redis">Redis</h1>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 177.0px;">
+<col style=3D"width: 206.0px;">
+<col style=3D"width: 97.0px;">
+<col style=3D"width: 280.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Check</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Action</strong></p></th>
+<th colspan=3D"2" class=3D"confluenceTh"><p><strong>Description</strong></p=
+></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>=EC=B5=9C=EB=8C=80=EB=A9=94=EB=AA=A8=EB=A6=AC=
+ =EC=84=A4=EC=A0=95</p></td>
+<td class=3D"confluenceTd"><p>maxmemory=3Dvalue</p></td>
+<td colspan=3D"2" class=3D"confluenceTd"><p>=EC=9D=BC=EB=B0=98=EC=A0=81=EC=
+=9C=BC=EB=A1=9C =EC=8B=9C=EC=8A=A4=ED=85=9C=EC=9D=98 80% =EB=AF=B8=EB=A7=8C=
+=EC=9D=98 =EC=B5=9C=EB=8C=80 =EB=A9=94=EB=AA=A8=EB=A6=AC=EB=A5=BC =EC=82=AC=
+=EC=9A=A9=ED=95=98=EB=8A=94 =EA=B2=83=EC=9D=B4 =EC=A2=8B=EB=8B=A4.<br>=EB=
+=B3=B4=EC=88=98=EC=A0=81=EC=9D=B8 =EC=8B=9C=EC=8A=A4=ED=85=9C=EC=9D=80 60~7=
+0%=EB=A1=9C =EC=82=AC=EC=9A=A9=ED=95=9C=EB=8B=A4.</p></td>
+</tr>
+<tr>
+<td rowspan=3D"7" class=3D"confluenceTd"><p>=EC=B5=9C=EB=8C=80=EB=A9=94=EB=
+=AA=A8=EB=A6=AC =EC=A0=95=EC=B1=85</p></td>
+<td rowspan=3D"7" class=3D"confluenceTd"><p>maxmemory-policy=3Dvolatile-lru=
+</p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>=EC=A0=95=
+=EC=B1=85=EB=AA=85</p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>=EC=84=A4=
+=EB=AA=85</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>noeviction</p></td>
+<td class=3D"confluenceTd"><p>=E2=98=85 =EA=B8=B0=EC=A1=B4 =EB=8D=B0=EC=9D=
+=B4=ED=84=B0 =EC=82=AD=EC=A0=9C =EC=95=88=ED=95=A8. =EB=A9=94=EB=AA=A8=EB=
+=A6=AC =ED=95=9C=EA=B3=84=EC=97=90 =EB=8F=84=EB=8B=AC=ED=95=98=EB=A9=B4 OOM=
+ =EC=98=A4=EB=A5=98 =EB=B0=98=ED=99=98. =EC=83=88 =EB=8D=B0=EC=9D=B4=ED=84=
+=B0 =EC=A0=80=EC=9E=A5=EB=90=98=EC=A7=80 =EC=95=8A=EC=9D=8C</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>allkeys-lru</p></td>
+<td class=3D"confluenceTd"><p>=E2=98=85=E2=98=85 LRU=EB=A1=9C =EC=82=AD=EC=
+=A0=9C=ED=95=98=EC=97=AC =EA=B3=B5=EA=B0=84=ED=99=95=EB=B3=B4 =ED=9B=84 =EC=
+=83=88 =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A0=80=EC=9E=A5 (LRU: =EC=B5=9C=EA=B7=
+=BC=EC=B5=9C=EC=86=8C=EC=82=AC=EC=9A=A9)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>volatile-lru</p></td>
+<td class=3D"confluenceTd"><p>=E2=98=85=E2=98=85=E2=98=85 expire set=EC=9D=
+=84 =EA=B0=80=EC=A7=84 =EA=B2=83 =EC=A4=91 LRU=EB=A1=9C =EC=82=AD=EC=A0=9C=
+=ED=95=98=EC=97=AC =EA=B3=B5=EA=B0=84=ED=99=95=EB=B3=B4 =ED=9B=84 =EC=83=88=
+ =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A0=80=EC=9E=A5</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>allkeys-random</p></td>
+<td class=3D"confluenceTd"><p>=EB=9E=9C=EB=8D=A4=EC=9C=BC=EB=A1=9C =EC=82=
+=AD=EC=A0=9C=ED=95=98=EC=97=AC =EA=B3=B5=EA=B0=84=ED=99=95=EB=B3=B4=ED=95=
+=98=EA=B3=A0 =EC=83=88 =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A0=80=EC=9E=A5</p></=
+td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>volatile-random</p></td>
+<td class=3D"confluenceTd"><p>expire set=EC=9D=84 =EA=B0=80=EC=A7=84 =EA=B2=
+=83 =EC=A4=91=EC=97=90=EC=84=9C =EB=9E=9C=EB=8D=A4=EC=9C=BC=EB=A1=9C =EC=82=
+=AD=EC=A0=9C=ED=95=98=EC=97=AC =EA=B3=B5=EA=B0=84=ED=99=95=EB=B3=B4=ED=95=
+=98=EA=B3=A0 =EC=83=88 =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A0=80=EC=9E=A5</p></=
+td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>volatile-ttl</p></td>
+<td class=3D"confluenceTd"><p>expire set=EC=9D=84 =EA=B0=80=EC=A7=84 =EA=B2=
+=83 =EC=A4=91 TTL=EC=9D=B4 =EC=A7=A7=EC=9D=80 =EA=B2=83=EB=B6=80=ED=84=B0 =
+=EC=82=AD=EC=A0=9C=ED=95=98=EC=97=AC =EA=B3=B5=EA=B0=84=ED=99=95=EB=B3=B4=
+=ED=95=98=EA=B3=A0 =EC=83=88 =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A0=80=EC=9E=A5=
+</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_8_1184431154.1615446116611--
